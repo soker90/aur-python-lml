@@ -25,7 +25,7 @@ arch:
     - "reflector --verbose -l 20 --sort rate -p https"
     - "echo $CC"
     - "touch test_file"
-    - "makepkg"
+    - "makepkg -i"
 
 script:
   - "curl -s https://raw.githubusercontent.com/soker90/arch-travis/master/arch-travis.sh | bash"
